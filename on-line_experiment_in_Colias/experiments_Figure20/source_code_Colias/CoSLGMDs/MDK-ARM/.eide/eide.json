@@ -1,0 +1,263 @@
+{
+  "name": "ColiasSenseV4-5",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "../User/Src/main.c"
+          },
+          {
+            "path": "../User/Src/stm32f4xx_it.c"
+          },
+          {
+            "path": "../User/Src/misc.c"
+          },
+          {
+            "path": "../SenseBoard/CCMRAM_DEF.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "S_Hardware",
+        "files": [
+          {
+            "path": "../SenseBoard/coliasSense_board.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_Camera.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_CLED.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_interfaces.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_UART.c"
+          },
+          {
+            "path": "../SenseBoard/delay.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_BIO.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSence_Motion.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_Exbd.c"
+          },
+          {
+            "path": "../SenseBoard/Hardware/Src/coliasSense_MPU9250.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "S_Models",
+        "files": [
+          {
+            "path": "../SenseBoard/RegAccess.c"
+          },
+          {
+            "path": "../SenseBoard/Models/Src/user_terminal.c"
+          },
+          {
+            "path": "../SenseBoard/Models/Src/coliasSense_LGMD.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "::Device",
+        "files": [
+          {
+            "path": "RTE/Device/STM32F427VI/startup_stm32f427xx.s"
+          },
+          {
+            "path": "RTE/Device/STM32F427VI/system_stm32f4xx.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "003ffa6e5bb70bbe2443061d8ba7aee0"
+  },
+  "targets": {
+    "ColiasSenseV4-CHENGS5-SSD": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "ColiasSenseV4.sct",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x30000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x10000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x200000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../Drivers/STM32F4xx_HAL_Driver/Inc",
+          "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+          "../Drivers/CMSIS/Include",
+          "../Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+          "../SenseBoard",
+          "../SenseBoard/Hardware/Inc",
+          "../SenseBoard/Models/Inc",
+          "../User/Inc",
+          "../ThirdParty",
+          ".cmsis/include",
+          "RTE/Device/STM32F427VI",
+          "RTE/_ColiasSenseV4-CHENGS5-SSD",
+          ".eide/deps"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F427xx"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}

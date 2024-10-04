@@ -1,0 +1,17 @@
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Source\SupportFunctions\arm_barycenter_f32.c
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Include\dsp/support_functions.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Include\arm_math_types.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Keil_uVision5\ARM\ARMCC\Bin\..\include\stdint.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Keil_uVision5\ARM\ARMCC\Bin\..\include\string.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Keil_uVision5\ARM\ARMCC\Bin\..\include\math.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Keil_uVision5\ARM\ARMCC\Bin\..\include\float.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Keil_uVision5\ARM\ARMCC\Bin\..\include\limits.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Include\arm_math_memory.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Include\dsp/none.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Include\dsp/utils.h
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\Source\SupportFunctions\arm_bitonic_sort_f32.c
+.\outputjob\supportfunctions.o: D:\keil_uvision5_kit\Packs\ARM\CMSIS\5.9.0\CMSIS\DSP\PrivateInclude\arm_sorting.h
+.\outputjob\supportfunctions.o: ../Drivers/CMSIS/Include/arm_math.h

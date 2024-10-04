@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "coliassense_board.h": "c",
+        "user_terminal.h": "c",
+        "coliassense_lgmd.h": "c"
+    }
+}
