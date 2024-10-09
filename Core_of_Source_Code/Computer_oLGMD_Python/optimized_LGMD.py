@@ -80,14 +80,13 @@ class LGMD2:
         P,Pon,Pff,Eon,Eff,Son,Sff= np.zeros((self.height, self.width, len(Z)), dtype=np.float32),np.zeros((self.height, self.width, len(Z)), dtype=np.float32),np.zeros((self.height, self.width, len(Z)), dtype=np.float32),np.zeros((self.height, self.width, len(Z)), dtype=np.float32),np.zeros((self.height, self.width, len(Z)), dtype=np.float32),np.zeros((self.height, self.width, len(Z)), dtype=np.float32),np.zeros((self.height, self.width, len(Z)), dtype=np.float32) 
 
         for t in range(2, len(Z)): 
-            print('Frame :', t )
             a11 = 1/(1+np.exp(t-1))
             a12 = 1/(1+np.exp(t-2))
             a = 1/(1+np.exp(0))
             P[:, :, t] = Z[t] - Z[t-1] + a11*P[:, :, t-1] + a12*P[:, :, t-2] 
             #cv2.imwrite(r"C:\Users\21124\Desktop\P_output\P_gray_{}.png".format(t), P[:, :, t])
     
-            # half_wave rectify 半波整流处理
+            # half_wave rectify 
             c0 = np.greater(P[:, :, t], 0).astype(int) 
             Pon[:, :, t] = np.multiply(P[:, :, t], c0) + 0.1 * Pon[:, :, t-1] 
             c1 = np.less(P[:, :, t], 0).astype(int) 
@@ -233,10 +232,7 @@ class LGMD2:
 
 
 
-        # 将颜色指定为 RGB 值
         curve_color = (0/255, 0/255, 234/255)
-        #curve_color = (255/255, 127/255, 0/255)
-        bar_color = (10/255, 5/255, 5/255)
         dashed_line_color = (214/255, 226/255, 228/255)
         dashed_color = (164/255, 166/255, 168/255)
 
@@ -248,7 +244,6 @@ class LGMD2:
         ax.axhline(y=0.78, color=dashed_color, linestyle='--',linewidth=2.5)
         ax.axhline(y=1, color=dashed_line_color)
 
-        # 画竖线图并添加圆点
         for i in range(len(y)):
             if i==0:
                 ax.plot([y[i], y[i]], [0, self.Col[i]], color='r',linestyle='--', linewidth=2.3, label='Spike', alpha=0.6)
@@ -257,8 +252,6 @@ class LGMD2:
                 ax.plot([y[i], y[i]], [0, self.Col[i]], color='r',linestyle='--', linewidth=2.3, alpha=0.6)
                 ax.plot(y[i], self.Col[i], marker='o', markersize=6, color='r')  # 添加圆点
 
-
-        # 画曲线
         ax.plot(x, self.K, color=curve_color, linewidth=2.7,label='oLGMD2')
         ax.set_ylim([0.45, 1.1])
         plt.yticks([0.5, 0.8, 1.0],fontsize=30)
@@ -266,8 +259,6 @@ class LGMD2:
         ax.set_ylabel('Membrane Potential', fontsize=32)
 
         
-
-        # 手动转换
         K_array = np.array(self.K)
 
         #ax.set_xlabel('frames', fontsize=16)
@@ -277,8 +268,8 @@ class LGMD2:
         plt.show()
 
 
-#PathVal = r"C:\Users\21124\Desktop\LGMD\LGMD_video\discuss 0408\vehicle stimuli\c04.mp4"
-PathVal = r"C:\A_RESEARCH\Off_Line\Python\LGMD\oLGMD\expanding_circle_720_990.mp4"
+PathVal = r"C:\Users\21124\Desktop\LGMD\LGMD_video\discuss 0408\vehicle stimuli\c04.mp4"
+
 
 if __name__ == '__main__':
     lgmd2 = LGMD2()
