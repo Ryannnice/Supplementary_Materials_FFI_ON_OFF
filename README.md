@@ -1,4 +1,4 @@
-The repository includes C language codes for running Colias robot associated with the manuscript "A Computing-Efficient Collision-Detection Neuronal Model with Contrast Polarity-Specific Feed-Forward Inhibition".
+The repository includes C language code for running Colias robot and python code running in computer associated with the manuscript "A Computing-Efficient Collision-Detection Neuronal Model with Contrast Polarity-Specific Feed-Forward Inhibition".
 
 
 "Source_Code" : 1. on-line experiment code : completed code running in Colias chip
